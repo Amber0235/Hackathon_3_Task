@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero(){
     return (
-        <main className="bg-[#F2F0F1] mt-20 md:mt-1 md:h-[700px] md:px-10 sm:pt-4  flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start max-w-screen-2xl mx-auto">
+        <main className="bg-[#F2F0F1] mt-20 md:mt-8 md:h-[700px] md:px-10 sm:pt-4  flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start max-w-screen-2xl mx-auto">
               {/* left */}
                <div className="  md:pl-0  md:w-[500px] space-y-5  sm:pt-7 mt-10 px-3">
                 <h1 className={`text-4xl md:text-5xl lg:text-5xl font-extrabold`}>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
@@ -36,7 +36,7 @@ export default function Hero(){
                className="w-[70px] sm:w-[100px] absolute top-[80px] right-6 "
               width={200} height={200} alt="hero-image"></Image> 
                <Image src={"/star.png"}
-               className="w-[50px] sm:w-[70px]  absolute top-[300px] left-[0px] sm:left-[-10px] "
+               className="w-[50px] sm:w-[70px]  absolute top-[350px] left-[0px] sm:left-[-10px] "
               width={200} height={200} alt="hero-image"></Image> 
               </div>
         </main>
