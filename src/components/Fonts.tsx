@@ -14,7 +14,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function FontShowcase() {
   return (
-    <div className=" bg-black w-full h-[100px] md:h-[90px] flex flex-wrap justify-evenly md:justify-between   p-8 text-center space-x-3  max-w-screen-2xl mx-auto">
+    <div className=" bg-black w-full h-[100px] md:h-[90px] flex flex-wrap justify-evenly md:justify-between p-4  text-center space-x-3  max-w-screen-2xl mx-auto">
       <h1 className={`${playfair.className} text-2xl  md:text-4xl text-white font-bold`}>Versace </h1>
       <h1 className={`${playfair.className} text-2xl md:text-4xl text-white font-bold`}>Zara</h1>
 

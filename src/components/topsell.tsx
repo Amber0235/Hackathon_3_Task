@@ -1,17 +1,14 @@
 
-
-
-
 "use client"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-// import {
-//   Carousel,
-//   CarouselContent,
-//   CarouselItem,
-//   CarouselNext,
-//   CarouselPrevious,
-// } from "@/components/ui/carousel"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
  
 import { client } from '@/sanity/lib/client'
 import { urlFor } from "@/sanity/lib/image"
@@ -40,7 +37,7 @@ interface Iproducts {
 }
 
 
- function Shirts() {
+ function Product() {
   const [products, setProducts] = useState<Iproducts[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -61,7 +58,7 @@ interface Iproducts {
             description,
             price,
             _id
-          }[11 ...15]`
+          }[0...4]`
         );
         setProducts(fetchedProducts);
       } catch (err: any) {
@@ -94,8 +91,8 @@ interface Iproducts {
 
 
   return (
-    <div className="w-full mt-20 md:mt-16 h-full  max-w-screen-xl mx-auto">
-    <h1 className="text-3xl md:text-4xl font-bold text-center">TOP SELLING</h1>
+    <div className="w-full mt-20 md:mt-36 h-full  max-w-screen-xl mx-auto">
+    <h1 className="text-3xl md:text-4xl font-bold text-center">NEW ARRIVALS</h1>
     <div className="relative mt-10 overflow-x-auto flex space-x-5 px-8">
       {products.map((data) => (
         <div key={data._id} className="flex-shrink-0">
@@ -153,4 +150,4 @@ interface Iproducts {
   ) 
 }
 
-export default Shirts
+export default Product

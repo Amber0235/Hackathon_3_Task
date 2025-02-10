@@ -11,7 +11,7 @@ import Offers from "./Offers";
 
 export default function Footer(){
     return (
-        <main className="bg-[#F0F0F0] w-full h-full md:h-[450px] relative mt-32 max-w-screen-2xl mx-auto ">
+        <main className="bg-[#F0F0F0] w-full h-full md:h-[500px] relative mt-14 max-w-screen-2xl mx-auto ">
           {/*  */}
           <span className="absolute top-[-60px]">
             <Offers />
@@ -23,10 +23,10 @@ export default function Footer(){
           <div className="flex flex-col justify-center items-center w-[200px] mt-12 ml-6"> 
         
             <ul>
-                <h2 className="text-3xl sm:text-2xl font-extrabold space-y-4 pl-12 mt-3">SHOP.CO</h2>
-                <p className=" w-full md:w-[300] md:mt-2 pl-10"> We have clothes that suits your style and which you&aposre proud to wear. From women to men.</p>
+                <h2 className="text-3xl sm:text-2xl font-extrabold space-y-4 pl-2 mt-3">SHOP.CO</h2>
+                <p className=" w-full md:w-[250] md:mt-2 pl-2"> We have clothes that suits your style and which you&aposre proud to wear. From women to men.</p>
                    {/* icon */}
-                   <div className="flex items-center space-x-3 mt-2 ml-10">
+                   <div className="flex items-center space-x-3 mt-2 ml-2">
                     <FaInstagram className="text-xl"/>
                      <FaFacebook className="text-xl"/>
                        <FaGithub className="text-xl"/>
@@ -76,7 +76,7 @@ export default function Footer(){
            
         </div>
          {/* bottom div */}
-         <div className="flex flex-col sm:flex-row justify-between items-center mt-2 max-w-screen-2xl mx-auto ml-5 mr-5">
+         <div className="flex flex-col sm:flex-row justify-between items-center mt-8 max-w-screen-2xl mx-auto ml-4 mr-5">
                 <p className="text-sm">Shop.co © 2000-2023, All Rights Reserved</p>
                 <div className="flex items-center ">
                     <Image src={"/footer1.png"} className="w-[50px]" width={100} height={100} alt="pic"/>
@@ -90,4 +90,8 @@ export default function Footer(){
         </main>
     )
 }
+
+
+
+
 
